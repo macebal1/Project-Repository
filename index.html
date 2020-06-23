@@ -23,14 +23,19 @@
 
     <style>
       .column {
-        padding: 10px;
         float: left;
+        padding: 10px;
       }
       .column.side {
         width: 25%;
       }
       .column.middle {
         width: 50%;
+      }
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
       }
     </style>
   </head>
@@ -85,13 +90,40 @@
     <div class="row">
       <div class="column side">
         <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          recusandae ex adipisci provident quia laudantium eum ipsum vel
+          obcaecati. Vel impedit esse alias hic consequuntur, necessitatibus
+          nemo cupiditate maiores! Rerum!
+        </p>
       </div>
+
       <div class="column middle">
         <h2>Get Cooking With Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          hic aspernatur temporibus magni cupiditate similique dolor accusantium
+          ducimus rem itaque voluptate voluptatibus voluptates amet iste, labore
+          sed iure id fuga.
+        </p>
+        <br />
         <h2>Workout With Us</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+          voluptatum eos sed rerum maiores minus amet nostrum quibusdam
+          voluptate aliquam inventore, ipsam quidem tempora delectus corporis a
+          rem velit enim?
+        </p>
       </div>
+
       <div class="column side">
         <h2>Other Than Fitness</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+          minima voluptatem aperiam. Illo itaque vel possimus placeat, earum
+          laborum eius necessitatibus id nam unde optio beatae eligendi tenetur
+          reprehenderit minima.
+        </p>
       </div>
     </div>
   </body>
