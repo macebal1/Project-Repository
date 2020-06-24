@@ -19,24 +19,122 @@
       gtag("config", "UA-169867346-1");
     </script>
     <link rel="stylesheet" href="styling-pages/header-style.css" />
+    <style>
+      .column {
+        float: left;
+        width: 50%;
+      }
+      .column-right {
+        float: left;
+        width: 45%;
+        text-align: center;
+      }
+      .tips {
+        list-style-type: circle;
+      }
+      .workout-tips {
+        background-color: white;
+        color: #242424;
+        padding: 5px;
+      }
+      h2 {
+        font-weight: bold;
+      }
+      .button {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button1 {
+        background-color: white;
+        color: #d5ad9e;
+        border: 3px solid #d5ad9e;
+      }
+      .button1:hover {
+        background-color: #d5ad9e;
+        color: white;
+      }
+      .weekday:link,
+      .weekday:visited {
+        color: #242424;
+      }
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        text-transform: uppercase;
+        color: #d5ad9e;
+      }
+    </style>
   </head>
   <body>
     <header>
+      <section class="logo header">
+        <img
+          src="images-project/logo.png"
+          alt="logo"
+          title="NotAnotherFitnessBlog"
+          style="width: 70%;"
+        />
+      </section>
       <section>
         <nav class="navbar">
           <ul class="navigation">
-            <li>
-              <a href="index.html">Home</a>
+            <div>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            </div>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                  <a href="mariella.html">Mariella Acebal</a>
+                  <a href="alfredo.html">Alfredo Acebal</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="aboutus.html">About Us</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="workouts.html">Workouts</a>
+                <div class="dropdown-content">
+                  <a href="monday.html">Monday Workout</a>
+                  <a href="tuesday.html">Tuesday Workout</a>
+                  <a href="wednesday.html">Wednesday Workout</a>
+                  <a href="thursday.html">Thursday Workout</a>
+                  <a href="friday.html">Friday Workout</a>
+                  <a href="saturday.html">Satuday Workout</a>
+                  <a href="sunday.html">Sunday Workout</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="workouts.html">Workouts</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                  <a href="almondbutter.html">Almond Butter</a>
+                  <a href="cesardressing.html">Keto Cesar Dressing</a>
+                  <a href="darkchocalmond.html"
+                    >Dark Chocolate Almond Clusters</a
+                  >
+                  <a href="eggs.html">Our Go-To Eggs</a>
+                  <a href="granola.html">Home Made Granola</a>
+                  <a href="lemonwater.html">Lemon Water</a>
+                  <a href="peanutbutter.html">Peanut Butter</a>
+                  <a href="pistachiopesto.html">Pistachio Pesto</a>
+                  <a href="seed.html">Seed Crackers</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="recipes.html">Recipes</a>
-            </li>
+
             <li>
               <a href="other.html">Other</a>
             </li>
@@ -46,13 +144,105 @@
           </ul>
         </nav>
       </section>
-      <section class="logo">
-        <h1>Not Another Fitness Blog</h1>
-        <!-- TODO: replace this with the actual logo once I finish it -->
-      </section>
     </header>
     <main>
-      <div>
+      <div class="row">
+        <div class="column workout-tips">
+          <img
+            src="images-project/workout.jpg"
+            alt="workout"
+            title="WorkoutEquipment"
+            style="width: 100%;"
+          />
+          <h2>Workout Tips</h2>
+          <ul class="tips">
+            <li>
+              Try to do cardio on an empty stomach. This does not necessarily
+              work for everyone, but it has been very promising for our results.
+            </li>
+            <br />
+            <li>
+              Every morning drink 8oz of lemon water freshly made
+            </li>
+            <br />
+            <li>
+              If desired, take amino acids during training for muscle recovery
+            </li>
+            <br />
+            <li>
+              Listen to your body. If you are tired it might need some rest, but
+              never confuse that with the power of your mind.
+            </li>
+            <br />
+            <li>
+              We trust the results of HIIT: High Intensity Interval Training. So
+              try to incorporate this in your workouts.
+            </li>
+            <br />
+            <li>
+              ALWAYS warm up your body – either with a short jog, 5 minutes of
+              jump rope, or even a warm-up routine
+            </li>
+            <br />
+            <li>
+              Don’t let your routines get boring – change the moves, the weight,
+              even the effort
+            </li>
+            <br />
+            <li>
+              Get a workout partner with your same intentions for extra
+              motivation
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column-right">
+        <h2>What a Workout Week Looks Like:</h2>
+        <ul>
+          <li>
+            <button class="button button1">
+              <a href="monday.html" class="weekday">Monday</a>
+            </button>
+          </li>
+          <br />
+          <li>
+            <button class="button button1">
+              <a href="tuesday.html" class="weekday">Tuesday</a>
+            </button>
+          </li>
+          <br />
+          <li>
+            <button class="button button1">
+              <a href="wednesday.html" class="weekday">Wednesday</a>
+            </button>
+          </li>
+          <br />
+          <li>
+            <button class="button button1">
+              <a href="thursday.html" class="weekday">Thursday</a>
+            </button>
+          </li>
+          <br />
+          <li>
+            <button class="button button1">
+              <a href="friday.html" class="weekday">Friday</a>
+            </button>
+          </li>
+          <br />
+          <li>
+            <button class="button button1">
+              <a href="saturday.html" class="weekday">Saturday</a>
+            </button>
+          </li>
+          <br />
+          <li>
+            <button class="button button1">
+              <a href="sunday.html" class="weekday">Sunday</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- <div>
         <ul>
           Some Workout Tips
           <li>
@@ -61,7 +251,6 @@
           </li>
           <li>
             Every morning drink 8oz of lemon water freshly made
-            <!-- (RECIPE ON THE RECIPE PAGE) -->
           </li>
           <li>
             If desired, take amino acids during training for muscle recovery
@@ -85,161 +274,44 @@
           <li>
             Get a workout partner with your same intentions for extra motivation
           </li>
-        </ul>
-      </div>
-      <div>
+        </ul> 
+      </div> -->
+      <!-- <div>
         <h3>Workouts</h3>
         <div>
-          <!-- TODO: format this like a weekly schedule -->
           <table>
             <caption>
-              Weekly Schdule Example
+              Weekly Schedule Example
             </caption>
             <tr>
               <th>Monday</th>
-              <td>
-                <ul>
-                  Warm Up
-                  <li>500 Jump Rope</li>
-                </ul>
-                <ul>
-                  30 Minute AMRAP
-                  <li>15 Squats</li>
-                  <li>15 Good Morning</li>
-                  <li>30 Alternate Walking Lunges</li>
-                  <li>15 Squat Jumps</li>
-                  <li>15 Sit Ups</li>
-                  <li>15 Groiners</li>
-                  <li>15 Calf Raises</li>
-                </ul>
-              </td>
             </tr>
             <tr>
               <th>Tuesday</th>
-              <td>
-                <ul>
-                  Warm Up
-                  <li>500 Jump Rope</li>
-                </ul>
-                <ul>
-                  30 Minute AMRAP
-                  <li>15 Push Ups</li>
-                  <li>15 Single Arm Row</li>
-                  <li>15 Kettlebell Swings</li>
-                  <li>15 Bicep Curls</li>
-                  <li>15 Shoulder Press</li>
-                  <li>30 Plank Shoulder Touch</li>
-                  <li>30 Mountain Climbers</li>
-                </ul>
-              </td>
             </tr>
             <tr>
               <th>Wednesday</th>
-              <td>
-                <ul>
-                  Warm Up
-                  <li>1 km Run OR 500 Jump Rope</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>10 Squats</li>
-                  <li>10 Push Ups</li>
-                  <li>10 Kettlebell Swings</li>
-                  <li>50 Jump Rope</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>30 Second Plank</li>
-                  <li>30 Second Squat Hold</li>
-                  <li>10 Sit Ups</li>
-                  <li>10 Calf Raises</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>30 Knee Raises</li>
-                  <li>30 Jumping Jacks</li>
-                  <li>15 Sit Ups</li>
-                </ul>
-                <ul>
-                  Stretch
-                </ul>
-              </td>
             </tr>
             <tr>
               <th>Thursday</th>
-              <td>
-                <ul>
-                  Warm Up
-                  <li>500 Jump Rope</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>3 Stage Push Ups</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>3 Stage Squats</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>3 Stage Bicep Curls</li>
-                </ul>
-                <ul>
-                  3 x
-                  <li>3 Stage Deadlift</li>
-                </ul>
-                <ul>
-                  To Finish:
-                  <li>100 Sit Ups</li>
-                </ul>
-              </td>
             </tr>
             <tr>
               <th>Friday</th>
-              <td>
-                <ul>
-                  Warm Up
-                  <li>1 km Run OR 500 Jump Rope</li>
-                </ul>
-                <ul>
-                  TABATA
-                  <li>Plank</li>
-                </ul>
-                <ul>
-                  5 x
-                  <li>15 Push Ups</li>
-                  <li>15 Sit Ups</li>
-                  <li>15 Goblet Squats</li>
-                </ul>
-                <ul>
-                  40-30-20-10
-                  <li>Thursters</li>
-                  <li>Burpees</li>
-                  <li>Dips</li>
-                </ul>
-              </td>
             </tr>
             <tr>
               <th>Saturday</th>
-              <td>
-                <ul>
-                  CARDIO
-                  <li>Long Run (10-15km)</li>
-                </ul>
-              </td>
             </tr>
             <tr>
               <th>Sunday</th>
-              <td>REST DAY</td>
             </tr>
           </table>
         </div>
-      </div>
+      </div> -->
     </main>
-    <footer>
+    <!-- <footer>
       <p>Want more information? Email: notanotherfitnessblog@gmail.com</p>
       <hr />
       <p><a href="sitemap.html">Site Map</a></p>
-    </footer>
+    </footer> -->
   </body>
 </html>

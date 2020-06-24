@@ -1,16 +1,16 @@
 .column {
-    float: left;
-    padding: 10px;
+  float: left;
 }
 .left {
-    width: 30%;
+  width: 30%;
+  padding: 5px;
 }
 .right {
-    width: 70%;
+  width: 65%;
 }
-.ingredients-text{
-    font-weight: bold;
+.ingredients-text {
+  font-weight: bold;
 }
 .preparation-text {
-    font-weight: bold;
+  font-weight: bold;
 }

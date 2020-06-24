@@ -1,0 +1,41 @@
+h3 {
+    text-transform: uppercase;
+    color: #d5ad9e;
+}
+body {
+    text-transform: uppercase;
+}
+.warm-up{
+float: left;
+width: 60%;
+padding: 10px;
+}
+.workout{
+float: left;
+width: 25%;
+padding: 10px;
+}
+.columns {
+margin-right: auto;
+margin-left: auto;
+}
+.details {
+    list-style-type: circle;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #d5ad9e;
+    float: left;
+    width: 180px;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.h-three {
+    text-transform: uppercase;
+}

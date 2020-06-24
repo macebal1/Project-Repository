@@ -42,10 +42,29 @@
       .right-side-col {
         left: 75%;
       }
+      a {
+        text-decoration: none;
+        border: solid #242424;
+        padding: 5px;
+      }
+      .home-link {
+        color: #d5ad9e;
+        border-color: #d5ad9e;
+        border-width: 3pt;
+      }
+      
     </style>
   </head>
   <body>
     <header>
+      <section class="logo header">
+        <img
+          src="images-project/logo.png"
+          alt="logo"
+          title="NotAnotherFitnessBlog"
+          style="width: 70%;"
+        />
+      </section>
       <section>
         <nav class="navbar">
           <ul class="navigation">
@@ -56,25 +75,25 @@
             </div>
             <li class="dropbtn">
               <div class="dropdown">
-              <a href="aboutus.html">About Us</a>
-              <div class="dropdown-content">
-                <a href="mariella.html">Mariella Acebal</a>
-                <a href="alfredo.html">Alfredo Acebal</a>
-              </div>
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                  <a href="mariella.html">Mariella Acebal</a>
+                  <a href="alfredo.html">Alfredo Acebal</a>
+                </div>
               </div>
             </li>
             <li class="dropbtn">
               <div class="dropdown">
-              <a href="workouts.html">Workouts</a>
-              <div class="dropdown-content">
-                <a href="monday.html">Monday Workout</a>
-                <a href="tuesday.html">Tuesday Workout</a>
-                <a href="wednesday.html">Wednesday Workout</a>
-                <a href="thursday.html">Thursday Workout</a>
-                <a href="friday.html">Friday Workout</a>
-                <a href="saturday.html">Satuday Workout</a>
-                <a href="sunday.html">Sunday Workout</a>
-              </div>
+                <a href="workouts.html">Workouts</a>
+                <div class="dropdown-content">
+                  <a href="monday.html">Monday Workout</a>
+                  <a href="tuesday.html">Tuesday Workout</a>
+                  <a href="wednesday.html">Wednesday Workout</a>
+                  <a href="thursday.html">Thursday Workout</a>
+                  <a href="friday.html">Friday Workout</a>
+                  <a href="saturday.html">Satuday Workout</a>
+                  <a href="sunday.html">Sunday Workout</a>
+                </div>
               </div>
             </li>
             <li class="dropbtn">
@@ -105,50 +124,49 @@
           </ul>
         </nav>
       </section>
-      <section class="logo">
-        <h1>Not Another Fitness Blog</h1>
-        <!-- TODO: replace this with the actual logo once I finish it -->
-      </section>
     </header>
+    <main>
+      <div class="content">
+        <div class="row">
+          <div class="column side">
+            <h2><a href="aboutus.html" class="home-link">About Us</a></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos recusandae ex adipisci provident quia laudantium eum
+              ipsum vel obcaecati. Vel impedit esse alias hic consequuntur,
+              necessitatibus nemo cupiditate maiores! Rerum!
+            </p>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="column side">
-        <h2><a href="aboutus.html">About Us</a></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          recusandae ex adipisci provident quia laudantium eum ipsum vel
-          obcaecati. Vel impedit esse alias hic consequuntur, necessitatibus
-          nemo cupiditate maiores! Rerum!
-        </p>
-      </div>
+        <div class="column middle">
+          <h2><a href="recipes.html" class="home-link">Get Cooking With Us</a></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            hic aspernatur temporibus magni cupiditate similique dolor
+            accusantium ducimus rem itaque voluptate voluptatibus voluptates
+            amet iste, labore sed iure id fuga.
+          </p>
+          <br />
+          <h2><a href="workouts.html" class="home-link">Workout With Us</a></h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+            voluptatum eos sed rerum maiores minus amet nostrum quibusdam
+            voluptate aliquam inventore, ipsam quidem tempora delectus corporis
+            a rem velit enim?
+          </p>
+        </div>
 
-      <div class="column middle">
-        <h2><a href="recipes.html">Get Cooking With Us</a></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          hic aspernatur temporibus magni cupiditate similique dolor accusantium
-          ducimus rem itaque voluptate voluptatibus voluptates amet iste, labore
-          sed iure id fuga.
-        </p>
-        <br />
-        <h2><a href="workouts.html">Workout With Us</a></h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-          voluptatum eos sed rerum maiores minus amet nostrum quibusdam
-          voluptate aliquam inventore, ipsam quidem tempora delectus corporis a
-          rem velit enim?
-        </p>
+        <div class="column side right-side-col">
+          <h2><a href="other.html" class="home-link">Other Than Fitness</a></h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            minima voluptatem aperiam. Illo itaque vel possimus placeat, earum
+            laborum eius necessitatibus id nam unde optio beatae eligendi
+            tenetur reprehenderit minima.
+          </p>
+        </div>
       </div>
-
-      <div class="column side right-side-col">
-        <h2><a href="other.html">Other Than Fitness</a></h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-          minima voluptatem aperiam. Illo itaque vel possimus placeat, earum
-          laborum eius necessitatibus id nam unde optio beatae eligendi tenetur
-          reprehenderit minima.
-        </p>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
