@@ -30,10 +30,17 @@
       .column.middle {
         width: 50%;
       }
-      .row::after {
-        content: "";
-        display: table;
-        clear: both;
+      .row {
+        position: relative;
+      }
+      .column {
+        position: absolute;
+      }
+      .column.middle {
+        left: 25%;
+      }
+      .right-side-col {
+        left: 75%;
       }
     </style>
   </head>
@@ -47,29 +54,48 @@
                 <a href="index.html">Home</a>
               </li>
             </div>
-
-            <li>
+            <li class="dropbtn">
+              <div class="dropdown">
               <a href="aboutus.html">About Us</a>
-            </li>
-            <li>
-              <a href="workouts.html">Workouts</a>
-            </li>
-            <div class="dropdown">
-              <li class="dropbtn">
-                <a href="recipes.html">Recipes</a>
-              </li>
               <div class="dropdown-content">
-                <a href="almondbutter.html">Almond Butter</a>
-                <a href="cesardressing.html">Keto Cesar Dressing</a>
-                <a href="darkchocalmond.html">Dark Chocolate Almond Clusters</a>
-                <a href="eggs.html">Our Go-To Eggs</a>
-                <a href="granola.html">Home Made Granola</a>
-                <a href="lemonwater.html">Lemon Water</a>
-                <a href="peanutbutter.html">Peanut Butter</a>
-                <a href="pistachiopesto.html">Pistachio Pesto</a>
-                <a href="seed.html">Seed Crackers</a>
+                <a href="mariella.html">Mariella Acebal</a>
+                <a href="alfredo.html">Alfredo Acebal</a>
               </div>
-            </div>
+              </div>
+            </li>
+            <li class="dropbtn">
+              <div class="dropdown">
+              <a href="workouts.html">Workouts</a>
+              <div class="dropdown-content">
+                <a href="monday.html">Monday Workout</a>
+                <a href="tuesday.html">Tuesday Workout</a>
+                <a href="wednesday.html">Wednesday Workout</a>
+                <a href="thursday.html">Thursday Workout</a>
+                <a href="friday.html">Friday Workout</a>
+                <a href="saturday.html">Satuday Workout</a>
+                <a href="sunday.html">Sunday Workout</a>
+              </div>
+              </div>
+            </li>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                  <a href="almondbutter.html">Almond Butter</a>
+                  <a href="cesardressing.html">Keto Cesar Dressing</a>
+                  <a href="darkchocalmond.html"
+                    >Dark Chocolate Almond Clusters</a
+                  >
+                  <a href="eggs.html">Our Go-To Eggs</a>
+                  <a href="granola.html">Home Made Granola</a>
+                  <a href="lemonwater.html">Lemon Water</a>
+                  <a href="peanutbutter.html">Peanut Butter</a>
+                  <a href="pistachiopesto.html">Pistachio Pesto</a>
+                  <a href="seed.html">Seed Crackers</a>
+                </div>
+              </div>
+            </li>
+
             <li>
               <a href="other.html">Other</a>
             </li>
@@ -87,7 +113,7 @@
 
     <div class="row">
       <div class="column side">
-        <h2>About Us</h2>
+        <h2><a href="aboutus.html">About Us</a></h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
           recusandae ex adipisci provident quia laudantium eum ipsum vel
@@ -97,7 +123,7 @@
       </div>
 
       <div class="column middle">
-        <h2>Get Cooking With Us</h2>
+        <h2><a href="recipes.html">Get Cooking With Us</a></h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           hic aspernatur temporibus magni cupiditate similique dolor accusantium
@@ -105,7 +131,7 @@
           sed iure id fuga.
         </p>
         <br />
-        <h2>Workout With Us</h2>
+        <h2><a href="workouts.html">Workout With Us</a></h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
           voluptatum eos sed rerum maiores minus amet nostrum quibusdam
@@ -114,8 +140,8 @@
         </p>
       </div>
 
-      <div class="column side">
-        <h2>Other Than Fitness</h2>
+      <div class="column side right-side-col">
+        <h2><a href="other.html">Other Than Fitness</a></h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
           minima voluptatem aperiam. Illo itaque vel possimus placeat, earum
