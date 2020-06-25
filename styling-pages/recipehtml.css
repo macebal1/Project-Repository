@@ -25,6 +25,9 @@ div.recipe-name {
   display: inline-block;
   margin-bottom: 100px;
 }
+body {
+  background-color: #f4eae6
+}
 /* .column {
   width: 33.33%;
   padding: 5px;

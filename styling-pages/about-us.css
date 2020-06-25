@@ -1,7 +1,7 @@
 .personal-image {
     border-radius: 30%;
     width: 50%;
-    border: 3px solid #d5ad9e;
+    border: 3px solid #242424;
     padding: 20px;
 }
 p {
@@ -17,6 +17,9 @@ p {
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
-    color: #d5ad9e;
+    color: #242424;
+}
+body{
+    background-color: #f4eae6
 }
 
