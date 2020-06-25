@@ -19,6 +19,32 @@
       gtag("config", "UA-169867346-1");
     </script>
     <link rel="stylesheet" href="styling-pages/header-style.css" />
+    <link rel="stylesheet" href="styling-pages/footer.css">
+    <style>
+      #sitemap-header {
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: left;
+        font-weight: 700;
+        color: #d5ad9e;
+      }
+      body {
+        margin-bottom: 100px;
+      }
+      .subheading {
+        color: #242424;
+      }
+      a {
+        text-decoration: none;
+      }
+      .link:link,
+      .link:visited{
+        color: #242424;
+      }
+      h4 {
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body>
     <header id="main-header">
@@ -88,17 +114,45 @@
       </section>
     </header>
     <main>
-      <h1>Sitemap</h1>
-      <hr />
-      <h3><a href="index.html">About Us</a></h3>
-      <h3><a href="workouts.html">Workouts</a></h3>
-      <h3><a href="recipes.html">Recipes</a></h3>
-      <h3><a href="other.html">Other</a></h3>
+      <h1 id="sitemap-header">Sitemap</h1>
+      <br>
+      <h3 class="subheading"><a href="index.html" class="link">Home</a></h3>
+      <br>
+      <h3 class="subheading"><a href="aboutus.html" class="link">About Us</a></h3>
+        <h4><a href="mariella.html" class="link">About Mariella Acebal</a></h4>
+        <h4><a href="alfredo.html" class="link">About Alfredo Acebal</a></h4>
+      <br>
+      <h3 class="subheading"><a href="workouts.html" class="link">Workouts</a></h3>
+        <h4><a href="monday.html" class="link">Monday Workout</a></h4>
+        <h4><a href="tuesday.html" class="link">Tuesday Workout</a></h4>
+        <h4><a href="wednesday.html" class="link">Wednesday Workout</a></h4>
+        <h4><a href="thursday.html" class="link">Thursday Workout</a></h4>
+        <h4><a href="friday.html" class="link">Friday Workout</a></h4>
+        <h4><a href="saturday.html" class="link">Satuday Workout</a></h4>
+        <h4><a href="sunday.html" class="link">Sunday Workout</a></h4>
+      <br>
+      <h3 class="subheading"><a href="recipes.html" class="link">Recipes</a></h3>
+        <h4><a href="almondbutter.html" class="link">Almond Butter</a></h4>
+        <h4><a href="cesardressing.html" class="link">Keto Cesar Dressing</a></h4>
+        <h4><a href="darkchocalmond.html" class="link">Dark Chocolate Almond Clusters</a></h4>
+        <h4><a href="eggs.html" class="link">Pur Go-To Eggs</a></h4>
+        <h4><a href="granola.html" class="link">Home Made Granola</a></h4>
+        <h4><a href="lemonwater.html" class="link">Lemon Water</a></h4>
+        <h4><a href="peanutbutter.html" class="link">Peanut Butter</a></h4>
+        <h4><a href="pistachiopesto.html" class="link">Pistachio Pesto</a></h4>
+        <h4><a href="seed.html" class="link">Seed Crackers</a></h4>
+      <br>
+      <h3 class="subheading"><a href="contactus.html" class="link">Contact Us</a></h3>
+      <br>
     </main>
-    <footer>
-      <p>Want more information? Email: notanotherfitnessblog@gmail.com</p>
-      <hr />
-      <p><a href="sitemap.html">Site Map</a></p>
+    <footer class="footer-section">
+      <div class="footer">
+        <p id="info">Want more information?</p>
+        <button class="footer-btn">
+          <a href="contactus.html" class="footer-link">Contact Us</a>
+        </button>
+        <p><a href="sitemap.html" class="link">Site Map</a></p>
+      </div>
     </footer>
   </body>
 </html>

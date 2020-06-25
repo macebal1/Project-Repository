@@ -38,3 +38,13 @@ h2 {
 #italics {
   font-style: italic;
 }
+body {
+  margin-bottom: 100px;
+}
+#recipe-name {
+  text-align: center;
+}
+#recipe-image {
+  margin-right: auto;
+  margin-left: auto;
+}

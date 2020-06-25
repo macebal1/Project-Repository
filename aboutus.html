@@ -19,18 +19,19 @@
       gtag("config", "UA-169867346-1");
     </script>
     <link rel="stylesheet" href="styling-pages/header-style.css" />
+    <link rel="stylesheet" href="styling-pages/footer.css" />
     <style>
-      html {
-        box-sizing: border-box;
-      }
       .main-text {
-        margin-right: auto;
-        margin-left: auto;
+        /* margin-right: auto;
+        margin-left: auto; */
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
       }
       .column {
         float: left;
         width: 40%;
-        margin-bottom: 16px;
+        margin-bottom: 100px;
         padding: 0 8px;
       }
       .card {
@@ -48,7 +49,7 @@
         display: inline-block;
         padding: 20px;
         color: white;
-        background-color: #000;
+        background-color: #242424;
         text-align: center;
         cursor: pointer;
         width: 100%;
@@ -56,11 +57,27 @@
       .button:hover {
         background-color: #555;
       }
-      @media screen and (max-width: 650px) {
+      .aboutus-btn:link,
+      .aboutus-btn:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      /* @media screen and (max-width: 650px) {
         .column {
           width: 100%;
           display: block;
         }
+      } */
+      strong {
+        font-weight: bold;
+      }
+      .name-id {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #d5ad9e;
+        font-size: 22px;
       }
     </style>
   </head>
@@ -142,12 +159,14 @@
               style="width: 100%;"
             />
             <div class="container">
-              <h2>Mariella Acebal</h2>
+              <h2 class="name-id">Mariella Acebal</h2>
               <p class="title">Age: 20</p>
-              <p>Interests: Fitness, Fashion, & Travel</p>
+              <p><strong>Interests:</strong> Fitness, Fashion, & Travel</p>
               <p>
                 <button class="button">
-                  <a href="mariella.html">Learn More About Me</a>
+                  <a href="mariella.html" class="aboutus-btn"
+                    >Learn More About Me</a
+                  >
                 </button>
               </p>
             </div>
@@ -162,12 +181,14 @@
               style="width: 100%;"
             />
             <div class="container">
-              <h2>Alfredo Acebal</h2>
+              <h2 class="name-id">Alfredo Acebal</h2>
               <p class="title">Age: 26</p>
-              <p>Interests: Fitness, Business, & Nutrition</p>
+              <p><strong>Interests:</strong> Fitness, Business, & Nutrition</p>
               <p>
                 <button class="button">
-                  <a href="alfredo.html">Learn More About Me</a>
+                  <a href="alfredo.html" class="aboutus-btn"
+                    >Learn More About Me</a
+                  >
                 </button>
               </p>
             </div>
@@ -175,5 +196,14 @@
         </div>
       </div>
     </main>
+    <footer class="footer-section">
+      <div class="footer">
+        <p id="info">Want more information?</p>
+        <button class="footer-btn">
+          <a href="contactus.html" class="footer-link">Contact Us</a>
+        </button>
+        <p><a href="sitemap.html" class="link">Site Map</a></p>
+      </div>
+    </footer>
   </body>
 </html>
