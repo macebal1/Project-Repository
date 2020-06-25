@@ -22,24 +22,64 @@
     <link rel="stylesheet" href="styling-pages/recipe-pages.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
+      <section>
+        <img
+          src="images-project/logo.png"
+          alt="logo"
+          title="NotAnotherFitnessBlog"
+          style="width: 70%;"
+          id="logo-img"
+        />
+      </section>
       <section>
         <nav class="navbar">
           <ul class="navigation">
-            <li>
-              <a href="index.html">Home</a>
+            <div>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            </div>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                  <a href="mariella.html">Mariella Acebal</a>
+                  <a href="alfredo.html">Alfredo Acebal</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="aboutus.html">About Us</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="workouts.html">Workouts</a>
+                <div class="dropdown-content">
+                  <a href="monday.html">Monday Workout</a>
+                  <a href="tuesday.html">Tuesday Workout</a>
+                  <a href="wednesday.html">Wednesday Workout</a>
+                  <a href="thursday.html">Thursday Workout</a>
+                  <a href="friday.html">Friday Workout</a>
+                  <a href="saturday.html">Satuday Workout</a>
+                  <a href="sunday.html">Sunday Workout</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="workouts.html">Workouts</a>
-            </li>
-            <li>
-              <a href="recipes.html">Recipes</a>
-            </li>
-            <li>
-              <a href="other.html">Other</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                  <a href="almondbutter.html">Almond Butter</a>
+                  <a href="cesardressing.html">Keto Cesar Dressing</a>
+                  <a href="darkchocalmond.html"
+                    >Dark Chocolate Almond Clusters</a
+                  >
+                  <a href="eggs.html">Our Go-To Eggs</a>
+                  <a href="granola.html">Home Made Granola</a>
+                  <a href="lemonwater.html">Lemon Water</a>
+                  <a href="peanutbutter.html">Peanut Butter</a>
+                  <a href="pistachiopesto.html">Pistachio Pesto</a>
+                  <a href="seed.html">Seed Crackers</a>
+                </div>
+              </div>
             </li>
             <li>
               <a href="contactus.html">Contact Us</a>
@@ -47,12 +87,77 @@
           </ul>
         </nav>
       </section>
-      <section class="logo">
-        <h1>Not Another Fitness Blog</h1>
-        <!-- TODO: replace this with the actual logo once I finish it -->
-      </section>
     </header>
-    <main>
+    <main class="main-content">
+      <header id="recipe-name">
+        <h1 id="title">Home Made Granola</h1>
+      </header>
+      <div>
+        <div>
+          <img
+            src="images-project/granola.jpg"
+            alt="granola"
+            title="HomeMadeGranola"
+            id="recipe-image"
+          />
+        </div>
+        <h2>How to Make Home Made Granola</h2>
+        <div>
+          <h3>Ingredients</h3>
+          <div>
+            <ul id="recipe-ingredients">
+              <li>4 Cups Rolled Oats</li>
+              <li>1 Cup Almonds</li>
+              <li>1/2 Cup Pumpkin Seeds</li>
+              <li>1 Teaspoon Sea Salt</li>
+              <li>1 Teaspoon Powdered Cinnamon</li>
+              <li>1/2 Cup Coconut Oil</li>
+              <li>1/2 Cup Maple Syrup</li>
+              <li>1 Teaspoon Vanilla Extract</li>
+              <li>1/2 Cup Cranberries (Optional)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Instructions</h3>
+          <div>
+            <p>
+              <strong>Step 1: </strong>Preheat the oven to
+              <strong>350°F (177°C)</strong>
+            </p>
+            <p>
+              <strong>Step 2: </strong>Prepare a baking tray with
+              <strong>parchment paper</strong> and set aside
+            </p>
+            <p>
+              <strong>Step 3: </strong>In a <strong>medium bowl</strong> mix the
+              rolled oats, almonds, pumpkin seeds, cranberries, salt, and
+              cinnamon
+            </p>
+            <p>
+              <strong>Step 4: </strong>In <strong>another bowl</strong> combine
+              well the coconut oil, honey, and vanilla
+            </p>
+            <p>
+              <strong>Step 5: </strong>Slowly transfer the dry ingredients from
+              the first bowl to the second bowl and mix until
+              <strong>all ingredients</strong> are covered with the honey,
+              coconut oil, and vanilla mixture
+            </p>
+            <p>
+              <strong>Step 6: </strong>Transfer the mixture into the
+              <strong>tray</strong> and <strong>spread</strong> with a spatula
+            </p>
+            <p>
+              <strong>Step 7: </strong>Bake for about
+              <strong>20 minutes</strong> until the mixture is golden
+            </p>
+            <p><strong>Step 8: </strong>Let cool <strong>completely</strong></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <main>
       <div class="row">
         <div class="column left">
           <h2>Home Made Granola</h2>
@@ -109,6 +214,6 @@
           </ol>
         </div>
       </div>
-    </main>
+    </main> -->
   </body>
 </html>

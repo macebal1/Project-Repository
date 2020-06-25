@@ -6,15 +6,17 @@
     <title>Playground</title>
 
     <link rel="stylesheet" href="styling-pages/header-style.css" />
+    <link rel="stylesheet" href="styling-pages/playground.css" />
   </head>
   <body>
-    <header>
-      <section class="logo header">
+    <header id="main-header">
+      <section>
         <img
           src="images-project/logo.png"
           alt="logo"
           title="NotAnotherFitnessBlog"
           style="width: 70%;"
+          id="logo-img"
         />
       </section>
       <section>
@@ -25,12 +27,14 @@
                 <a href="index.html">Home</a>
               </li>
             </div>
-            <li class="dropdown">
-                <a href="aboutus.html" class="dropbtn">About Us</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="aboutus.html">About Us</a>
                 <div class="dropdown-content">
                   <a href="mariella.html">Mariella Acebal</a>
                   <a href="alfredo.html">Alfredo Acebal</a>
                 </div>
+              </div>
             </li>
             <li class="dropbtn">
               <div class="dropdown">
@@ -64,10 +68,6 @@
                 </div>
               </div>
             </li>
-
-            <li>
-              <a href="other.html">Other</a>
-            </li>
             <li>
               <a href="contactus.html">Contact Us</a>
             </li>
@@ -75,5 +75,67 @@
         </nav>
       </section>
     </header>
+    <main class="main-content">
+      <header id="recipe-name">
+        <h1 id="title">Almond Butter</h1>
+      </header>
+      <div>
+        <div>
+          <img
+            src="images-project/almond-butter.jpg"
+            alt="almond-butter"
+            title="AlmondButter"
+            id="recipe-image"
+          />
+        </div>
+        <h2>How to Make Almond Butter</h2>
+        <div>
+          <h3>Ingredients</h3>
+          <div>
+            <ul class="recipe-ingredients">
+              <li>1 Large Bag Raw Almonds (around 5 cups)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Instructions</h3>
+          <div>
+            <p>
+              <strong>Step 1: </strong>Preheat the oven to
+              <strong>350°F (177°C)</strong>.
+            </p>
+            <p>
+              <strong>Step 2: </strong>Place the almonds on a
+              <strong>large tray</strong>, and once the oven is hot, place them
+              in the oven for <strong>15-20 minutes</strong> or until they have
+              turned <strong>golden</strong>.
+            </p>
+            <p>
+              <strong>Step 3:</strong> Transfer the almonds
+              <strong>carefully</strong> into a food processor and start
+              blending on <strong>high speed</strong>.
+            </p>
+            <p>
+              <strong>Step 4: </strong>Stop occasionally to clean the borders of
+              the processor
+            </p>
+            <p>
+              <strong>Step 5:</strong> Nuts take time to release their own oils,
+              so <strong>pay attention </strong> to when the mixture starts to
+              blend and become butter.
+            </p>
+            <p>
+              <strong>Step 6: </strong>Once the desired consistency is achieved,
+              transfer your butter into a container
+              <strong>with lid</strong> and don’t cover until the mixture is
+              <strong>cooled</strong>.
+            </p>
+            <p>
+              <strong>Step 7: </strong>Store in the <strong>fridge</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

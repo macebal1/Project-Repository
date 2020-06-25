@@ -22,24 +22,64 @@
     <link rel="stylesheet" href="styling-pages/recipe-pages.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
+      <section>
+        <img
+          src="images-project/logo.png"
+          alt="logo"
+          title="NotAnotherFitnessBlog"
+          style="width: 70%;"
+          id="logo-img"
+        />
+      </section>
       <section>
         <nav class="navbar">
           <ul class="navigation">
-            <li>
-              <a href="index.html">Home</a>
+            <div>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            </div>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                  <a href="mariella.html">Mariella Acebal</a>
+                  <a href="alfredo.html">Alfredo Acebal</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="aboutus.html">About Us</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="workouts.html">Workouts</a>
+                <div class="dropdown-content">
+                  <a href="monday.html">Monday Workout</a>
+                  <a href="tuesday.html">Tuesday Workout</a>
+                  <a href="wednesday.html">Wednesday Workout</a>
+                  <a href="thursday.html">Thursday Workout</a>
+                  <a href="friday.html">Friday Workout</a>
+                  <a href="saturday.html">Satuday Workout</a>
+                  <a href="sunday.html">Sunday Workout</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="workouts.html">Workouts</a>
-            </li>
-            <li>
-              <a href="recipes.html">Recipes</a>
-            </li>
-            <li>
-              <a href="other.html">Other</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                  <a href="almondbutter.html">Almond Butter</a>
+                  <a href="cesardressing.html">Keto Cesar Dressing</a>
+                  <a href="darkchocalmond.html"
+                    >Dark Chocolate Almond Clusters</a
+                  >
+                  <a href="eggs.html">Our Go-To Eggs</a>
+                  <a href="granola.html">Home Made Granola</a>
+                  <a href="lemonwater.html">Lemon Water</a>
+                  <a href="peanutbutter.html">Peanut Butter</a>
+                  <a href="pistachiopesto.html">Pistachio Pesto</a>
+                  <a href="seed.html">Seed Crackers</a>
+                </div>
+              </div>
             </li>
             <li>
               <a href="contactus.html">Contact Us</a>
@@ -47,12 +87,63 @@
           </ul>
         </nav>
       </section>
-      <section class="logo">
-        <h1>Not Another Fitness Blog</h1>
-        <!-- TODO: replace this with the actual logo once I finish it -->
-      </section>
     </header>
-    <main>
+    <main class="main-content">
+      <header id="recipe-name">
+        <h1 id="title">Our go-to Eggs</h1>
+      </header>
+      <div>
+        <div>
+          <img
+            src="images-project/eggs.jpg"
+            alt="eggs"
+            title="OurGoToEggs"
+            id="recipe-image"
+          />
+        </div>
+        <h2>How to Make Our go-to Eggs</h2>
+        <div>
+          <h3>Ingredients</h3>
+          <div>
+            <ul id="recipe-ingredients">
+              <li>2 Organic Eggs</li>
+              <li>
+                Turkey Breast (We use Boar's Head Honey Roasted Turkey Breast)
+              </li>
+              <li>1/4 Cup Grated Parmesan Cheese</li>
+              <li>Salt, Pepper, and Herbs to taste for seasoning</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Instructions</h3>
+          <div>
+            <p>
+              <strong>Step 1: </strong>Place 1 or 2 slices of turkey breast into
+              a medium size skillet on <strong>medium</strong> heat. Let it get
+              a littler warm but <strong>not</strong> completely golden
+            </p>
+            <p>
+              <strong>Step 2: </strong>Crack the 2 eggs
+              <strong>on top</strong> of the breast (like if you were to do
+              fried eggs)
+            </p>
+            <p>
+              <strong>Step 3: </strong>Sprinkle the salt, pepper, and herbs to
+              taste <strong>on top</strong> of the eggs
+            </p>
+            <p><strong>Step 4: </strong>Cover the skillet completely</p>
+            <p>
+              <strong>Step 5: </strong>Once the egg yolk has
+              <strong>cooked</strong>, sprinkle the parmesan cheese and
+              <strong>cover</strong> once again
+            </p>
+            <p><strong>Step 6: </strong>Let cook until desired and serve</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <main>
       <div class="row">
         <div class="column left">
           <h2>Our go-to Eggs</h2>
@@ -100,6 +191,6 @@
           </ol>
         </div>
       </div>
-    </main>
+    </main> -->
   </body>
 </html>

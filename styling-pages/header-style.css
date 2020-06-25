@@ -2,8 +2,12 @@ body {
   margin: 1;
   font-family: sans-serif;
 }
-.header {
+#main-header {
   text-align: center;
+}
+#logo-img {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ul.navigation {

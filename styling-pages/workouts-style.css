@@ -24,7 +24,7 @@ margin-left: auto;
 }
 div.gallery {
     margin: 5px;
-    border: 1px solid #d5ad9e;
+    border: 3px solid #d5ad9e;
     float: left;
     width: 180px;
 }
@@ -33,9 +33,16 @@ div.gallery img{
     height: auto;
 }
 div.desc {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 30px;
 }
 .h-three {
     text-transform: uppercase;
 }
+/* img {
+    width: 500;
+    height: 800;
+} */

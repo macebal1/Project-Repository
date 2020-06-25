@@ -22,24 +22,64 @@
     <link rel="stylesheet" href="styling-pages/recipe-pages.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
+      <section>
+        <img
+          src="images-project/logo.png"
+          alt="logo"
+          title="NotAnotherFitnessBlog"
+          style="width: 70%;"
+          id="logo-img"
+        />
+      </section>
       <section>
         <nav class="navbar">
           <ul class="navigation">
-            <li>
-              <a href="index.html">Home</a>
+            <div>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            </div>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                  <a href="mariella.html">Mariella Acebal</a>
+                  <a href="alfredo.html">Alfredo Acebal</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="aboutus.html">About Us</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="workouts.html">Workouts</a>
+                <div class="dropdown-content">
+                  <a href="monday.html">Monday Workout</a>
+                  <a href="tuesday.html">Tuesday Workout</a>
+                  <a href="wednesday.html">Wednesday Workout</a>
+                  <a href="thursday.html">Thursday Workout</a>
+                  <a href="friday.html">Friday Workout</a>
+                  <a href="saturday.html">Satuday Workout</a>
+                  <a href="sunday.html">Sunday Workout</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="workouts.html">Workouts</a>
-            </li>
-            <li>
-              <a href="recipes.html">Recipes</a>
-            </li>
-            <li>
-              <a href="other.html">Other</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                  <a href="almondbutter.html">Almond Butter</a>
+                  <a href="cesardressing.html">Keto Cesar Dressing</a>
+                  <a href="darkchocalmond.html"
+                    >Dark Chocolate Almond Clusters</a
+                  >
+                  <a href="eggs.html">Our Go-To Eggs</a>
+                  <a href="granola.html">Home Made Granola</a>
+                  <a href="lemonwater.html">Lemon Water</a>
+                  <a href="peanutbutter.html">Peanut Butter</a>
+                  <a href="pistachiopesto.html">Pistachio Pesto</a>
+                  <a href="seed.html">Seed Crackers</a>
+                </div>
+              </div>
             </li>
             <li>
               <a href="contactus.html">Contact Us</a>
@@ -47,12 +87,54 @@
           </ul>
         </nav>
       </section>
-      <section class="logo">
-        <h1>Not Another Fitness Blog</h1>
-        <!-- TODO: replace this with the actual logo once I finish it -->
-      </section>
     </header>
-    <main>
+    <main class="main-content">
+      <header id="recipe-name">
+        <h1 id="title">Lemon Water</h1>
+      </header>
+      <div>
+        <div>
+          <img
+            src="images-project/lemon-water.jpg"
+            alt="lemon-water"
+            title="LemonWater"
+            id="recipe-image"
+          />
+        </div>
+        <h2>How to Make Lemon Water</h2>
+        <div>
+          <h3>Ingredients</h3>
+          <div>
+            <ul id="recipe-ingredients">
+              <li>1 Lemon</li>
+              <li>8-10 oz. Water</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Instructions</h3>
+          <div>
+            <p><strong>Step 1: </strong>Wash your lemon</p>
+            <p>
+              <strong>Step 2: </strong>Cut out the corner of the lemon with a
+              <strong>sharp</strong> knife, and slice it in half
+            </p>
+            <p>
+              <strong>Step 3: </strong>Place the entire lemon
+              <strong>(keep out the corners you cut)</strong> on the blender
+              with the water
+            </p>
+            <p><strong>Step 4: </strong>Blend until smooth</p>
+            <p>
+              <strong>Step 5: </strong>With a <strong>strainer</strong>,
+              transfer the lemon water into a glass
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <main>
       <div class="row">
         <div class="column left">
           <h2>Lemon Water</h2>
@@ -92,6 +174,6 @@
           </ol>
         </div>
       </div>
-    </main>
+    </main> -->
   </body>
 </html>

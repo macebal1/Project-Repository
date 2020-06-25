@@ -22,24 +22,64 @@
     <link rel="stylesheet" href="styling-pages/recipe-pages.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
+      <section>
+        <img
+          src="images-project/logo.png"
+          alt="logo"
+          title="NotAnotherFitnessBlog"
+          style="width: 70%;"
+          id="logo-img"
+        />
+      </section>
       <section>
         <nav class="navbar">
           <ul class="navigation">
-            <li>
-              <a href="index.html">Home</a>
+            <div>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            </div>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                  <a href="mariella.html">Mariella Acebal</a>
+                  <a href="alfredo.html">Alfredo Acebal</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="aboutus.html">About Us</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="workouts.html">Workouts</a>
+                <div class="dropdown-content">
+                  <a href="monday.html">Monday Workout</a>
+                  <a href="tuesday.html">Tuesday Workout</a>
+                  <a href="wednesday.html">Wednesday Workout</a>
+                  <a href="thursday.html">Thursday Workout</a>
+                  <a href="friday.html">Friday Workout</a>
+                  <a href="saturday.html">Satuday Workout</a>
+                  <a href="sunday.html">Sunday Workout</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="workouts.html">Workouts</a>
-            </li>
-            <li>
-              <a href="recipes.html">Recipes</a>
-            </li>
-            <li>
-              <a href="other.html">Other</a>
+            <li class="dropbtn">
+              <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                  <a href="almondbutter.html">Almond Butter</a>
+                  <a href="cesardressing.html">Keto Cesar Dressing</a>
+                  <a href="darkchocalmond.html"
+                    >Dark Chocolate Almond Clusters</a
+                  >
+                  <a href="eggs.html">Our Go-To Eggs</a>
+                  <a href="granola.html">Home Made Granola</a>
+                  <a href="lemonwater.html">Lemon Water</a>
+                  <a href="peanutbutter.html">Peanut Butter</a>
+                  <a href="pistachiopesto.html">Pistachio Pesto</a>
+                  <a href="seed.html">Seed Crackers</a>
+                </div>
+              </div>
             </li>
             <li>
               <a href="contactus.html">Contact Us</a>
@@ -47,12 +87,82 @@
           </ul>
         </nav>
       </section>
-      <section class="logo">
-        <h1>Not Another Fitness Blog</h1>
-        <!-- TODO: replace this with the actual logo once I finish it -->
-      </section>
     </header>
-    <main>
+    <main class="main-content">
+      <header id="recipe-name">
+        <h1 id="title">Dark Chocolate Almond Clusters</h1>
+      </header>
+      <div>
+        <div>
+          <img
+            src="images-project/almond-cluster.jpg"
+            alt="almond-cluster"
+            title="AlmondCluster"
+            id="recipe-image"
+          />
+        </div>
+        <h2>How to Make Dark Chocolate Almond Clusters</h2>
+        <div>
+          <h3>Ingredients</h3>
+          <div>
+            <ul id="recipe-ingredients">
+              <li>1 1/4 Cups Sliced/Crushed Almonds</li>
+              <li>1/3 Cup Almond Butter</li>
+              <li>1 Tablespoon of Coconut Oil</li>
+              <li>
+                1/2 Cup Sugar-Free Chocolate Chips (Could also be dark chocolate
+                bar chopped in small pieces)
+              </li>
+              <li>1 Tablespoon Chia Seeds</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Instructions</h3>
+          <div>
+            <p>
+              <strong>Step 1: </strong>Cover a large plate or board with <strong>parchment paper</strong> and place it in
+              the <strong>freezer</strong> while you prepare the batter
+            </p>
+            <p>
+              <strong>Step 2: </strong>In a bowl <strong>(microwave save)</strong> add the almond butter, coconut oil, and
+              sugar-free chocolate chips.
+            </p>
+            <p>
+              <strong>Step 3: </strong>Microwave the ingredients. However, <strong>every 30 seconds</strong> stir the mix
+              to avoid the almond butter or chocolate from <strong>burning</strong>. The mixture
+              should be fully combined and melted. <span id="italics">If you don’t have access to a microwave, place all the ingredients
+                in a small saucepan under medium heat and stir at all times until
+                the chocolate melts and the ingredients are fully combined</span> 
+            </p>
+            <p>
+              <strong>Step 4: </strong>Transfer the sliced almonds and chia seeds into the mixture making
+              sure that the almonds and the seeds are <strong>fully</strong> covered with the
+              mixture
+            </p>
+            <p>
+              <strong>Step 5: </strong>Remove the <strong>plate</strong> from the freezer
+            </p>
+            <p>
+              <strong>Step 6: </strong>Spoon the batter with the size of the cookie desired and place it
+              on the cold plate <strong>(on top of the parchment paper to avoid sticking)</strong>.
+              Since the plate is cold, the cookie should not expand too much and
+              the bottom part should set pretty fast on the plate. Leave some
+              space between each cookie as a <strong>preventative</strong> measure. Repeat this
+              process until there is no more batter left.
+            </p>
+            <p><strong>Step 7: </strong>Place the plate with the cookies in the freezer for about <strong>10
+              minutes</strong> or when you see that the <strong>chocolate</strong> has set and is firm
+            </p>
+            <p>
+              <strong>Step 8: </strong>Store the cookies in an <strong>air tight</strong> container in the <strong>fridge</strong> so that
+              they are crunchy
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <main>
       <div class="row">
         <div class="column left">
           <h2>Dark Chocolate Almond Clusters</h2>
@@ -123,6 +233,6 @@
           </ol>
         </div>
       </div>
-    </main>
+    </main> -->
   </body>
 </html>
