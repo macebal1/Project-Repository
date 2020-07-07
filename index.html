@@ -143,17 +143,25 @@
         </nav>
       </section>
     </header>
+    <div>
+      <p id="click-me">Click Me!</p>
+    </div>
     <main>
       <div class="content">
         <div class="row">
           <div class="column side">
-            <h2><a href="aboutus.html" class="home-link">About Us</a></h2>
+            <h2>
+              <a href="aboutus.html" class="home-link" id="about-us"
+                >About Us</a
+              >
+            </h2>
             <a href="aboutus.html"
               ><img
                 src="images-project/us5.jpg"
                 alt="us"
                 title="UsTwo"
                 style="width: 90%;"
+                id="together"
             /></a>
             <p>
               Click the image to read more about our stories with regards to
@@ -170,10 +178,12 @@
 
         <div class="column middle">
           <h2>
-            <a href="recipes.html" class="home-link">Get Cooking With Us</a>
+            <a href="recipes.html" class="home-link" id="cooking"
+              >Get Cooking With Us</a
+            >
           </h2>
           <div>
-            <p>
+            <p id="cooking-p">
               Get cooking with us and discover some of the recipes we have
               created throughout this process.
             </p>
@@ -221,7 +231,11 @@
         </div>
 
         <div class="column side right-side-col">
-          <h2><a href="workouts.html" class="home-link">Workout With Us</a></h2>
+          <h2>
+            <a href="workouts.html" class="home-link" id="workout"
+              >Workout With Us</a
+            >
+          </h2>
           <div>
             <img
               src="images-project/plankhold.GIF"
@@ -230,7 +244,7 @@
               style="width: 90%;"
             />
           </div>
-          <p>
+          <p id="workout-p">
             Discover a variety of workouts with us, as well as a weekly schedule
             of how our personal workout routine looks like on a normal week.
           </p>
@@ -254,5 +268,72 @@
         <p><a href="sitemap.html" class="link">Site Map</a></p>
       </div>
     </footer>
+
+    <script>
+      // function changeText() {
+      //   let text = document.querySelector("p");
+      //   text.style.fontSize = "20pt";
+      // }
+      // document.querySelector("p").onmouseover = changeText;
+      // function changeTextTwo() {
+      //   let text = document.querySelector("#cooking-p");
+      //   text.style.fontSize = "20pt";
+      // }
+      // document.querySelector("#cooking-p").onmouseover = changeTextTwo;
+      // function changeTextThree() {
+      //   let text = document.querySelector("#workout-p");
+      //   text.style.fontSize = "20pt";
+      // }
+      // document.querySelector("#workout-p").onmouseover = changeTextThree;
+      function changeLogo() {
+        let image = document.querySelector("#logo-img");
+        image.style.width = "50%";
+      }
+      document.querySelector("#logo-img").onclick = changeLogo;
+
+      function changeElement() {
+        let h = document.querySelector("#about-us");
+        h.style.color = "#242424";
+      }
+      document.querySelector("#about-us").onmouseover = changeElement;
+      function changeElementOut() {
+        let h = document.querySelector("#about-us");
+        h.style.color = "#d5ad9e";
+      }
+      document.querySelector("#about-us").onmouseout = changeElementOut;
+
+      function changeOtherElement() {
+        let h = document.querySelector("#cooking");
+        h.style.color = "#242424";
+      }
+      document.querySelector("#cooking").onmouseover = changeOtherElement;
+      function changeOtherElementOut() {
+        let h = document.querySelector("#cooking");
+        h.style.color = "#d5ad9e";
+      }
+      document.querySelector("#cooking").onmouseout = changeOtherElementOut;
+
+      function changeWorkoutElement() {
+        let h = document.querySelector("#workout");
+        h.style.color = "#242424";
+      }
+      document.querySelector("#workout").onmouseover = changeWorkoutElement;
+      function changeWorkoutElementOut() {
+        let h = document.querySelector("#workout");
+        h.style.color = "#d5ad9e";
+      }
+      document.querySelector("#workout").onmouseout = changeWorkoutElementOut;
+
+      function animation() {
+        let x = document.querySelector("#click-me");
+        x.style.animation = "mymove 4s 2";
+      }
+      document.querySelector("#click-me").onclick = animation;
+      function startFunction() {
+        let x = document.querySelector("#click-me");
+        x.innerHTML = "Welcome to Not Another Fitness Blog!";
+      }
+      document.querySelector("#click-me").onclick = startFunction;
+    </script>
   </body>
 </html>

@@ -39,6 +39,7 @@
       body {
         background-color: #f4eae6;
       }
+
       .column {
         float: left;
         width: 50%;
@@ -53,11 +54,11 @@
       .tips {
         list-style-type: circle;
       }
-      .workout-tips {
+      /* /* .workout-tips {
         background-color: white;
         color: #242424;
-        padding: 5px;
-      }
+        padding: 5px; */
+
       h2 {
         font-weight: bold;
       }
@@ -170,6 +171,7 @@
             src="images-project/workout.jpg"
             alt="workout"
             title="WorkoutEquipment"
+            id="workout-img"
             style="width: 100%;"
           />
           <!-- <h2>Workout Tips</h2>
@@ -335,5 +337,19 @@
         <p><a href="sitemap.html" class="link">Site Map</a></p>
       </div>
     </footer>
+
+    <script>
+      function enlargeImage() {
+        let image = document.querySelector("#workout-img");
+        image.style.width = "110%";
+      }
+      document.querySelector("#workout-img").onmouseover = enlargeImage;
+
+      function reduceImage() {
+        let image = document.querySelector("#workout-img");
+        image.style.width = "100%";
+      }
+      document.querySelector("#workout-img").onmouseout = reduceImage;
+    </script>
   </body>
 </html>

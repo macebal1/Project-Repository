@@ -156,7 +156,7 @@
             <input
               type="text"
               id="email"
-              name="Email"
+              name="email"
               maxlength="150"
               placeholder="Enter your email here"
             />
@@ -201,7 +201,9 @@
           </div>
           <br />
           <div>
-            <button type="submit" name="submit-btn">Submit</button>
+            <button type="submit" name="submit-btn" id="submit-btn">
+              Submit
+            </button>
             <button type="reset" name="reset-btn">Reset</button>
           </div>
         </fieldset>
@@ -216,5 +218,20 @@
         <p><a href="sitemap.html" class="link">Site Map</a></p>
       </div>
     </footer>
+
+    <script>
+      function validateForm() {
+        const myForm = document.querySelector("form");
+        const name = myForm["name"].value;
+        const email = myForm["email"].value;
+
+        if (name.length === 0 || email.length === "") {
+          alert("Please enter both name and email");
+        } else if (name.length === "" || email.length === 0) {
+          alert("Please enter both name and email");
+        }
+      }
+      document.querySelector("#submit-btn").onclick = validateForm;
+    </script>
   </body>
 </html>
